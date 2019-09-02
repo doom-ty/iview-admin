@@ -28,3 +28,24 @@ export const saveErrorLogger = info => {
     method: 'post'
   })
 }
+
+export const uploadImg = formData => {
+  return axios.request({
+    url: 'image/upload',
+    data: formData
+  })
+}
+
+export const getOrgData = () => {
+  return axios.request({
+    url: 'get_org_data',
+    method: 'get'
+  })
+}
+
+export const getTreeSelectData = () => {
+  return axios.request({
+    url: 'get_tree_select_data',
+    method: 'get'
+  })
+}
